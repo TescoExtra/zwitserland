@@ -1,141 +1,219 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<title> Zwitserland - Registratie </title>
 <?php
-    $conn = new mysqli('localhost','root','','concurrent');
-    if($conn->connect_error){
-        die("Connection faild: " . $conn->connect_error);
-    }
-?>
-<html>
-	<head>
-		<title>Regestratie</title>
-		<link rel="stylesheet" type="text/css" href="fietsenzaak.css">
-		<style>
-				.error {color: #FF0000;}
-	input[type=text]{
-		width: 15%;
-		padding: 5px 2px;
-		margin: 8px 0;
-		display: inline-block;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		box-sizing: border-box;
-	}
-	
-	input[type=password]{
-		width: 15%;
-		padding: 5px 2px;
-		margin: 8px 0;
-		display: inline-block;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		box-sizing: border-box;
-	}
-	
-		</style>
-	</head>
-	<body>
-	<div class="container">
-	<header>
-	<a href="website fietsenzaak.php">
-	<img style="width:400px; height:150px" src="afb/logo.png"/>
-	</header>
-	</a>
-		<nav>
-			<ul>
-		<li><a class="active" href="">Home</a></li>
-			<li><a href="webshop.php">Webshop</a></li>
-			<li><a href="regestratie.php">Regestratie</a></li>
-			<li><a href="afspraak.php">Afpsraak</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="over ons.php">Over ons</a></li>
-			</ul>
-		</nav>
-<?php
-// define variables and set to empty values
-$nameErr = $passwordErr = $genderErr = $websiteErr = "";
-$name = $password = $gender = $comment = $website = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["Naam"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = $_POST["Naam"];
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-  
-  if (empty($_POST["Wachtwoord"])) {
-    $passwordErr = "Email is required";
-  } else {
-    $password = $_POST["Wachtwoord"];
-    // check if e-mail address is well-formed
-    
-  }
-    
-  if (empty($_POST["Plaats"])) {
-    $websiteErr = "website is required";
-  } else {
-    $website = $_POST["Plaats"];
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    
-  }
 
-  if (empty($_POST["Postcode"])) {
-    $comment = "comment is required";
-  } else {
-    $comment = $_POST["Postcode"];
+$con = mysqli_connect('localhost','root','','project');
+
+
+
+
+
+$firstname="";
+$lastname="";
+$email="";
+$password="";
+$c_password="";
+
+
+
+$msg="";
+$msg2="";
+$msg3="";
+$msg4="";
+$msg9="";
+
+if(isset($_POST['submit'])) {
+  $firstname=$_POST['fname'];
+  $lastname=$_POST['lname'];
+  $email=$_POST['mail'];
+  $password=$_POST['pass'];
+  $c_password=$_POST['cpass'];
+  $checkbox=isset($_POST['check']);
+
+  if(strlen($firstname)<3)
+  {
+    $msg="<div class='error'> Voornaam moet minimaal 4 letters bevatten </div>";
   }
-
-  if (empty($_POST["Telefoon"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = $_POST["Telefoon"];
+  else if(strlen($lastname)<3)
+  {
+    $msg2="<div class='error'> Achternaam moet minimaal 4 letters bevatten </div>";
   }
-
-  $sql = "INSERT INTO `user` (Naam, Wachtwoord, Plaats, Postcode, Telefoon)
-  VALUES ('$name', '$password', '$website', '$comment', '$gender')";
-
-  if ($conn->query($sql) === TRUE) {
-      echo "New record created successfully";
-  } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
+  else if(strlen($password)<5) {
+    $msg3="<div class='error'> Uw wachtwoord moet langer zijn dan 5 letters</div>";
+  }
+  else if($password!==$c_password) {
+    $msg4="<div class='error'> Uw wachtwoord is niet hetzelfde!</div>";
+  }
+  else {
+    mysqli_query($con, "INSERT INTO users(first_name,last_name,mail,password)
+    VALUES ('$firstname','$lastname','$email','$password')");
+    $msg9="<div class='success'>U bent nu geregistreerd!</div>";
+    header("location:login");
   }
 }
 
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
 ?>
-<article>
-<h2>Regestratie</h2>
-<p><span class="error">* Verplicht.</span></p>
-<form method="post" action="website fietsenzaak.php">  
-  Naam: <input type="text" name="Naam" value="">
-  <span class="error">* <?php echo $nameErr;?></span>
-  <br><br>
-  Wachtwoord: <input type="password" name="Wachtwoord" value="">
-  <span class="error">* <?php echo $passwordErr;?></span>
-  <br><br>
-  Postcode: <input type="text" name="Postcode" value="">
-  <span class="error">* <?php echo $websiteErr;?></span>
-  <br><br>
-  Plaats: <input type="text" name="Plaats" value="">
-  <br><br>
-  Telefoon:<input type="text" name="Telefoon" value="">
-  <span class="error">* <?php echo $genderErr;?></span>
-  <br><br>
-  <button type="submit">Verzenden</button>  
-</form>
+<body id="body-bg">
+<div class="container container-downy">
+  <div class="login-form col-md-4 offset-md-4">
+    <div class="jumbotron" style="margin-top:20px;padding-top:20px;">
+    <h3 style="text-align: center;">Registratie</h3><br/>
+      <?php  echo $msg9 ?>
+    <form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+    <label>Voornaam : </label>
+    <input type="text" name="fname" placeholder="Voornaam" class="form-control" value="<?php echo $firstname; ?>" required>
+    <?php  echo $msg ?>
+    </div>
+    <div class="form-group">
+    <label>Achternaam : </label>
+    <input type="text" name="lname" placeholder="Achternaam" class="form-control" value="<?php echo $lastname; ?>" required>
+    <?php  echo $msg2 ?>
+    </div>
+    <div class="form-group">
+    <label>Email : </label>
+    <input type="email" name="mail" placeholder="Email adres" class="form-control" value="<?php echo $email; ?>" required>
+    
+    </div>
+    <div class="form-group">
+    <label>Wachtwoord : </label>
+    <input type="password" name="pass" placeholder="Wachtwoord" class="form-control" required>
+    <?php  echo $msg3 ?>
+    </div>
+    <div class="form-group">
+    <label>Re-enter Wachtwoord : </label>
+    <input type="password" name="cpass" placeholder="Re-enter wachtwoord" class="form-control" required>
+    <?php  echo $msg4 ?>
+    </div>
+    <br/>
+    <div class="form-group">
+    <input type="checkbox" name="check" required/>
+    Ik ga akkoord met de voorwaarden.
+    </div>
+    <br/>
+    <input type="submit" value="Verzenden" name="submit" class="btn btn-success" required/>
+    </form>
+    </div>
+    </div>
+  </div>
+</div> 
+
+</body>
+
+<style>
 
 
-</article>
-		<footer>
-			&copy; 2018 De Concurrent - Alle rechten voorbehouden
-		</footer>
-	</div>
-	</body>
-</html>
+#body-bg {
+  background: url("https://images.alphacoders.com/527/527249.jpg") center no-repeat fixed;
+}
+
+.container-downy {
+  padding-top: 5em;
+}
+
+.formclass2 {
+  text-align: center;
+}
+
+.formclass {
+    text-align: center;
+}
+
+.inloggen-h1 {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.login_section .advertiser_left {
+    //height: 100%;
+    width: 47%;
+    background-size: cover;
+  }
+
+  .error {
+    color: red;
+  }
+
+  .success {
+    color: green;
+  }
+
+  .login_section .login_right {
+    background-color: #ffff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 2em 0 2em 0;
+  }
+
+  .login_section  .login_right .login_right_restrain {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: auto;
+  }
+
+      .articleclass h2 {
+        font-size: 2em;
+
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+        color: rgb(255, 26, 255);
+      }
+
+      .login_section .login_right .login_right_restrain h3 {
+        font-size: 1.3em;
+        font-weight: 300;
+        margin-bottom: 1.5em;
+        color: white;
+      }
+
+      .login_section .login_right .login_right_restrain p {
+        font-size: 1em;
+        font-weight: 300;
+        margin-bottom: 1em;
+        color: white;
+        line-height: 22px;
+      }
+
+      .login_section .login_right .login_right_restrain .signup {
+        border-radius: 50%;
+        height: 6em;
+        width: 6em;
+        margin: 0 auto;
+        border: none;
+        outline: 0 !important;
+        color: rgb(255, 26, 255);
+        background-color: white;
+      }
+
+      .login_section .login_right .login_right_restrain .signup:hover {
+        cursor: pointer;
+      }
+
+@media only screen and (max-width: 800px) {
+  .login_section {
+    flex-direction: column;
+  }
+
+    .login_section .login_left {
+      margin: auto;
+      height: 15em;
+      width: 90%;
+    }
+
+    .login_section .login_right {
+      margin: auto;
+      width: 90%;
+    }
+  }
+
+  .articleclass {
+    margin-top: 3em;
+  }
+
+
+</style>
