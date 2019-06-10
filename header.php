@@ -32,8 +32,8 @@
                         <div class="container">
                             <div class="title">Zwitserland</div>
                             <div class="btn-group">
-                                <a href="#" class="btn btn-primary">Login</a>
-                                <a href="#" class="btn btn-white">Registeren</a>
+                                <a href="http://localhost/projecten/login/" class="btn btn-primary">Login</a>
+                                <a href="http://localhost/projecten/registration/" class="btn btn-white">Registeren</a>
                             </div>
                         </div>
                     </div>
