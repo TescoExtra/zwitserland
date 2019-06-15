@@ -1,15 +1,13 @@
+
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<br/>
-<br/>
-<br/>
-<br/>
-
+<body>
 <div style="text-align: center;">
-    	<h1 class="jobstitle"> Beschikbare Huizen </h1>
+    	<h1 class="jobstitle"> Huisjes </h1>
 </div>
 <br/>
 <br/>
+
 
 
 <?php
@@ -23,7 +21,8 @@ if ( have_rows('werk_sections') ):
   while ( have_rows('werk_sections') ): the_row(); 
   
   $image = get_sub_field('section_image');
-  
+  $image1 = get_sub_field('image_1');
+  $image2 = get_sub_field('image_2');
   ?>
 
 <div class="advertiser_section d-flex" id="advertisers">
@@ -32,10 +31,31 @@ if ( have_rows('werk_sections') ):
         <div class="advertiser_right_restrain">
         <h1> <?php the_sub_field('section_titel'); ?> </h1>
             <h3> <?php the_sub_field('section_desc'); ?> </h3>
+            <button id="myBtn">Lees Meer</button>
+            <br/>
+            <br/>
 
-            <div class="btn-wrapper">
-              <button class="btn btn-outline-success"> Bestel dit huis! </button> 
-              <input type="file" name="myfile"/>
+
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p><?php the_sub_field('grote_tekst'); ?></p>
+                <div class="row">
+
+                <img src="<?php echo $image1 ?>" style="height: 20%; width: 20%; margin-right: 1em; margin-left: 1em;"/>
+
+
+
+                <img src="<?php echo $image2 ?>" style="height: 20%; width: 20%;"/>
+
+                </div>
+              </div>
+
+            </div>
+              
+
             </div>
         </div>
     </div>
@@ -46,7 +66,25 @@ if ( have_rows('werk_sections') ):
 <?php endwhile; ?>
 <?php endif; ?>
 
+</body>
+
 <style>
+
+.wpcf7-validation-errors {
+  display: none !important;
+}
+
+.wpcf7-response-output {
+    border: 2px solid #19d51a !important;
+}
+
+.wpcf7-display-none {
+    border: 2px solid #19d51a !important;
+}
+
+.wpcf7-mail-sent-ng {
+    border: 2px solid #19d51a !important;
+}
   .advertiser_section .advertiser_left {
     //height: 100%;
     width: 47%;
@@ -142,4 +180,71 @@ if ( have_rows('werk_sections') ):
     top: 0;
     opacity: 0;
   }
+
+  .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 85% !important;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 </style>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
