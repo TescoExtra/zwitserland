@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <title> Zwitserland - Registratie </title>
 <?php
@@ -49,7 +50,7 @@ if(isset($_POST['submit'])) {
     mysqli_query($con, "INSERT INTO users(first_name,last_name,mail,password)
     VALUES ('$firstname','$lastname','$email','$password')");
     $msg9="<div class='success'>U bent nu geregistreerd!</div>";
-    header("location:login");
+    header("location:huisjes");
   }
 }
 
