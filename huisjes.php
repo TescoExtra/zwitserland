@@ -1,7 +1,7 @@
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<body>
+<body id="body-bg">
 <div style="text-align: center;">
     	<h1 class="jobstitle"> Huisjes </h1>
 </div>
@@ -69,6 +69,11 @@ if ( have_rows('werk_sections') ):
 </body>
 
 <style>
+
+
+#body-bg {
+  background: url("https://images.alphacoders.com/527/527249.jpg") center no-repeat fixed;
+}
 
 .wpcf7-validation-errors {
   display: none !important;
