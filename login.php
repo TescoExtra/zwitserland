@@ -43,7 +43,7 @@ if(email_exists($email,$con)) {
   }
   else {
     $_SESSION['mail']=$email;
-    header("location:profile");
+    header("location:huisjes");
   }
 
 } else {
