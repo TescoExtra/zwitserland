@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <html lang="en">
     <head>
@@ -67,150 +68,154 @@
 
                 <style>
 
-.page-header {
-  background-color: white;
-  width: 100%;
-  height: 6em;
-  position: fixed;
-  top: -3.5em;
-  letter-spacing: 0.5px;
-  z-index: 300;
-}
+                .navbar {
+                  margin-bottom: 0 !important
+                }
 
-.mr-inherit {
-  margin-right: inherit;
-}
+                .page-header {
+                  background-color: white;
+                  width: 100%;
+                  height: 6em;
+                  position: fixed;
+                  top: -3.5em;
+                  letter-spacing: 0.5px;
+                  z-index: 300;
+                }
 
-.navbar-logo {
-  width: 20em;
-  height: 5em;
-  margin-left: 2em;
-}
+                .mr-inherit {
+                  margin-right: inherit;
+                }
 
-.navbar-logo-2 {
-  width: 8em;
-  height: 3em;
-}
+                .navbar-logo {
+                  width: 20em;
+                  height: 5em;
+                  margin-left: 2em;
+                }
 
-.nav-item a {
-  font-size: 16px;
-  font-weight: 500;
-}
+                .navbar-logo-2 {
+                  width: 8em;
+                  height: 3em;
+                }
 
-@media (max-width: 420px) {
-.navbar-logo {
-    margin-left: 2em;
-    width: 4em;
-    height: 1.7em;
-}
+                .nav-item a {
+                  font-size: 16px;
+                  font-weight: 500;
+                }
 
-  .page-header {
-    height: unset;
-  }
-}
+                @media (max-width: 420px) {
+                .navbar-logo {
+                    margin-left: 2em;
+                    width: 4em;
+                    height: 1.7em;
+                }
 
-@media (max-width: 767px) {
-  .navbar-collapse {
-    padding-left: 10px;
-    left: 0;
-    margin-top: 0.98em;
-    margin-right: 10em;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    margin-left: 0 !important;
-  }
-}
+                  .page-header {
+                    height: unset;
+                  }
+                }
 
-@media (min-width: 767px) {
-  .navbar-expand-lg {
+                @media (max-width: 767px) {
+                  .navbar-collapse {
+                    padding-left: 10px;
+                    left: 0;
+                    margin-top: 0.98em;
+                    margin-right: 10em;
+                    width: 100%;
+                    background-color: white;
+                    position: absolute;
+                    margin-left: 0 !important;
+                  }
+                }
 
-  }
-}
+                @media (min-width: 767px) {
+                  .navbar-expand-lg {
 
-.ml-auto {
-  margin-left: 0 !important;
-}
+                  }
+                }
 
-.navbar-collapse {
-  margin-left: 15px;
-}
+                .ml-auto {
+                  margin-left: 0 !important;
+                }
 
-.fa .fas {
-  font-weight: 900;
-  font-family: 'Font Awesome\ 5 Free', sans-serif;
-}
+                .navbar-collapse {
+                  margin-left: 15px;
+                }
 
-.fa-bars::before {
-  content: "\F0C9";
-}
+                .fa .fas {
+                  font-weight: 900;
+                  font-family: 'Font Awesome\ 5 Free', sans-serif;
+                }
 
-@media (min-width: 320px) {
-  .epic-container {
-    margin: 0;
-    width: 42%;
-  }
-}
+                .fa-bars::before {
+                  content: "\F0C9";
+                }
 
-@media (max-width: 810px) {
-  .nav-link {
-    font-size: 14px !important;
-  }
-}
+                @media (min-width: 320px) {
+                  .epic-container {
+                    margin: 0;
+                    width: 42%;
+                  }
+                }
 
-.nav-link {
-  color: #231f20 !important;
-}
+                @media (max-width: 810px) {
+                  .nav-link {
+                    font-size: 14px !important;
+                  }
+                }
 
-.navbar-nav {
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  margin-bottom: 0;
-  padding-left: 0;
-}
+                .nav-link {
+                  color: #231f20 !important;
+                }
 
-@media (min-width: 1000px) {
-  .nav-item {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
+                .navbar-nav {
+                  -ms-flex-direction: column;
+                  -webkit-box-direction: normal;
+                  -webkit-box-orient: vertical;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  flex-direction: column;
+                  list-style: none;
+                  margin-bottom: 0;
+                  padding-left: 0;
+                }
 
-  .navbar-collapse {
-    margin-left: 0;
-    margin-right: 15px;
-  }
-}
+                @media (min-width: 1000px) {
+                  .nav-item {
+                    margin-left: 1em;
+                    margin-right: 1em;
+                  }
 
-@media (min-width: 1200px) {
-  .nav-item {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
+                  .navbar-collapse {
+                    margin-left: 0;
+                    margin-right: 15px;
+                  }
+                }
 
-  .epic-container {
-    margin-left: 3em;
-  }
+                @media (min-width: 1200px) {
+                  .nav-item {
+                    margin-left: 0.5rem;
+                    margin-right: 0.5rem;
+                  }
 
-  .navbar-logo {
-    margin-left: auto;
-    margin-right: 5em;
-  }
+                  .epic-container {
+                    margin-left: 3em;
+                  }
 
-  .navbar-logo-2 {
-    margin-left: auto;
-    margin-right: 5em;
-  }
+                  .navbar-logo {
+                    margin-left: auto;
+                    margin-right: 5em;
+                  }
 
-  .navbar-collapse {
-    margin-right: 3em;
-  }
-}
+                  .navbar-logo-2 {
+                    margin-left: auto;
+                    margin-right: 5em;
+                  }
+
+                  .navbar-collapse {
+                    margin-right: 3em;
+                  }
+                }
 
     </style>
         
