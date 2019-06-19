@@ -31,9 +31,14 @@ if ( have_rows('werk_sections') ):
         <div class="advertiser_right_restrain">
         <h1> <?php the_sub_field('section_titel'); ?> </h1>
             <h3> <?php the_sub_field('section_desc'); ?> </h3>
-            <button id="myBtn">Lees Meer</button>
+            <button class="mini-btn" id="myBtn">Lees Meer</button>
             <br/>
             <br/>
+            <h2> Prijs: € <?php the_sub_field('huis_prijs'); ?> </h2>
+
+            <br/>
+            <br/>
+            <button class="btn btn-success" id="reserveBtn"> Reserveer </button>
 
 
             <div id="myModal" class="modal">
@@ -49,7 +54,7 @@ if ( have_rows('werk_sections') ):
 
 
                 <img src="<?php echo $image2 ?>" style="height: 20%; width: 20%;"/>
-
+                
                 </div>
               </div>
 
@@ -104,6 +109,10 @@ if ( have_rows('werk_sections') ):
     margin-left: 30em;
     display: flex;
     padding: 2em 0 2em 0;
+  }
+
+  .mini-btn {
+    width: 30%;
   }
 
   .advertiser_section  .advertiser_right .advertiser_right_restrain {
@@ -252,4 +261,12 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+var btn = document.getElementById("reserveBtn");
+
+btn.onclick = function() {
+  alert( "Huisje gereserveerd!");
+}
+
+
 </script>
