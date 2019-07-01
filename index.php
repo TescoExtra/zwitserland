@@ -60,10 +60,10 @@ This website lists every single Frictional Games Project ever created, even incl
 We also provide download links to every FREE game.
 
 </p>
-<a href="https://mosterdmaasland.nl/de-mosterd-kwaliteit/" class="btn btn-default">View Downloads</a>
+<a href="#" class="btn btn-default">View Downloads</a>
 </div>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-<img src="https://mosterdmaasland.nl/wp-content/uploads/2017/11/Op-maat-kwaliteit-Mosterd_v2.png" alt="" class="img-responsive">
+<img src="./css/images/grunt.png" alt="" class="img-responsive">
 </div>
 </div>
 </div>
@@ -74,17 +74,17 @@ We also provide download links to every FREE game.
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <h2><span class="brown">Penumbra's Engine</span>HPL1</h2>
 <p class="light less-wide">HPL1 was used to create Penumbra Overture, Black Plague and Requiem, as well as the Penumbra Tech Demo.</p>
-<a href="https://wiki.frictionalgames.com/hpl1/start" class="btn btn-default">View Documentation</a>
+<a href="https://wiki.frictionalgames.com/hpl1/start" class="btn btn-default">View Docs</a>
 </div>
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <h2><span class="brown">Amnesia's Engine</span>HPL2</h2>
 <p class="light less-wide">HPL2 was used to create Amnesia the Dark Descent, Amnesia a Machine for Pigs and many custom stories!</p>
-<a href="https://wiki.frictionalgames.com/hpl2/start" class="btn btn-default">View Documentation</a>
+<a href="https://wiki.frictionalgames.com/hpl2/start" class="btn btn-default">View Docs</a>
 </div>
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <h2><span class="brown">SOMA's Engine</span>HPL3</h2>
-<p class="light less-wide">HPL3 is the newest version of the HPL engine. HPL3 was used to create SOMA and possibly the two new secret projects...</p>
-<a href="https://wiki.frictionalgames.com/hpl3/start" class="btn btn-default">View Documentation</a>
+<p class="light less-wide">HPL3 is the newest version of the HPL engine. HPL3 was used to create SOMA and the new secret projects.</p>
+<a href="https://wiki.frictionalgames.com/hpl3/start" class="btn btn-default">View Docs</a>
 </div>
 </div>
 
@@ -234,7 +234,7 @@ We also provide download links to every FREE game.
 								   Thomas Grip								   </div>
 								   <div class="testimonial-content">
 									   <div class="testimonial-photo"><img src="./css/images/employees/thomas.jpg" class="img-circle"></div>
-									   <div class="testimonial-review"><p>One of the two co-founders of Frictional Games, where he mostly deal with programming, 
+									   <div class="testimonial-review"><p style="text-align: center;">One of the two co-founders of Frictional Games, where he mostly deal with programming, 
                                            design and making sure everybody does what they are supposed to. He has been creating mostly horror related games for over 10 years now and is really 
                                            interested in how to evoke emotions in players. Worked on the Penumbra series, the Amnesia games and SOMA, as well as his own old projects, Fiend, Unbirth and PROJECT 2.</p>
 </div>
@@ -252,7 +252,7 @@ We also provide download links to every FREE game.
 								   Peter Wester								   </div>
 								   <div class="testimonial-content">
 									   <div class="testimonial-photo"><img src="./css/images/employees/peter.jpg" class="img-circle"></div>
-									   <div class="testimonial-review"><p>Peter Wester has been an Engine Programmer at Frictional Games since late 2011. 
+									   <div class="testimonial-review"><p style="text-align: center;">Peter Wester has been an Engine Programmer at Frictional Games since late 2011. 
                                             As an Engine Programmer he takes care of the code that makes up the foundation of the game. The game is built on top of this.</p>
 </div>
 								</div>
@@ -269,7 +269,7 @@ We also provide download links to every FREE game.
 								   Rasmus Gunnarsson						   </div>
 								   <div class="testimonial-content">
 									   <div class="testimonial-photo"><img src="./css/images/employees/rasmus.jpg" class="img-circle"></div>
-									   <div class="testimonial-review"><p>Rasmus Gunnarsson started working for Frictional Games as a freelance artist back in 2010 to help out with the final stages of Amnesia's development. 
+									   <div class="testimonial-review"><p style="text-align: center;">Rasmus Gunnarsson started working for Frictional Games as a freelance artist back in 2010 to help out with the final stages of Amnesia's development. 
                                            Later, he became an intern, and that landed him full-time employment as a concept artist / 3D artist / level artist / whatever’s needed artist.</p>
 </div>
 								</div>
@@ -286,7 +286,7 @@ We also provide download links to every FREE game.
 								   Max Lidbeck								   </div>
 								   <div class="testimonial-content">
 									   <div class="testimonial-photo"><img src="./css/images/employees/max.jpg" class="img-circle"></div>
-									   <div class="testimonial-review"><p>Max joined Frictional somewhere around 2016, and has been working on one of their secret projects since as a gameplay programming and designer.</p>
+									   <div class="testimonial-review"><p style="text-align: center;">Max joined Frictional somewhere around 2016, and has been working on one of their secret projects since as a gameplay programming and designer.</p>
 </div>
 								</div>
                                <div class="row">
@@ -303,7 +303,7 @@ We also provide download links to every FREE game.
                         Miguel Nogueira						   </div>
 								   <div class="testimonial-content">
 									   <div class="testimonial-photo"><img src="./css/images/employees/miguel.jpg" class="img-circle"></div>
-									   <div class="testimonial-review"><p>Miguel Nogueira is a concept artist and designer at Frictional Games. His job is to create art for concepts that they might or might not add to the game. 
+									   <div class="testimonial-review"><p style="text-align: center;">Miguel Nogueira is a concept artist and designer at Frictional Games. His job is to create art for concepts that they might or might not add to the game. 
                                            The point of concept art and design is planting creative seeds in others through the means of art, 
                                            to spark debate on the suggestions, and to bring the concepts to life from sketch to product.</p>
 </div>
@@ -322,7 +322,7 @@ We also provide download links to every FREE game.
                         David Satzinger					   </div>
 								   <div class="testimonial-content">
 									   <div class="testimonial-photo"><img src="./css/images/employees/david.jpg" class="img-circle"></div>
-									   <div class="testimonial-review"><p>David is the "General Purpose Visual Design" person at Frictional Games, and Art Director on one of their new projects. 
+									   <div class="testimonial-review"><p style="text-align: center;">David is the "General Purpose Visual Design" person at Frictional Games, and Art Director on one of their new projects. 
                                            Originally he joined as a graphic designer to make in-game logos and GUI graphics for the company. 
                                            His first release with Frictional was Amnesia: A Machine for Pigs, for which he made lots of 2D assets.</p>
 </div>
@@ -341,7 +341,7 @@ We also provide download links to every FREE game.
                     Alex Camilleri				   </div>
 								   <div class="testimonial-content">
 									   <div class="testimonial-photo"><img src="./css/images/employees/alex.jpeg" class="img-circle"></div>
-									   <div class="testimonial-review"><p>Alex Camilleri joined Frictional Games in 2017 as a gameplay programmer & designer, and is currently working on one of the secret projects</p>
+									   <div class="testimonial-review"><p style="text-align: center;">Alex Camilleri joined Frictional Games in 2017 as a gameplay programmer & designer, and is currently working on one of the secret projects</p>
 </div>
 								</div>
                                <div class="row">
@@ -358,7 +358,7 @@ We also provide download links to every FREE game.
                   Gregor Panič			   </div>
 								   <div class="testimonial-content">
 									   <div class="testimonial-photo"><img src="./css/images/employees/gregor.jpg" class="img-circle"></div>
-									   <div class="testimonial-review"><p>Gregor Panič joined Frictional Games around September 2016. He is a designer and gameplay programmer at Frictional.
+									   <div class="testimonial-review"><p style="text-align: center;">Gregor Panič joined Frictional Games around September 2016. He is a designer and gameplay programmer at Frictional.
                                            He works on level scripting, AI, gameplay systems and level design.
 </div>
 								</div>
@@ -376,7 +376,7 @@ We also provide download links to every FREE game.
                     Patrik Dekhla		   </div>
 								   <div class="testimonial-content">
 									   <div class="testimonial-photo"><img src="./css/images/employees/patrik.jpg" class="img-circle"></div>
-									   <div class="testimonial-review"><p>Patrik Dekhla is a scripter and gameplay programmer. 
+									   <div class="testimonial-review"><p style="text-align: center;">Patrik Dekhla is a scripter and gameplay programmer. 
                                            He joined Frictional back in 2012 and since then he has worked full-time on SOMA, making the gameplay feel awesome and terrifying. 
                                            He is currently working on one of the secret projects.
 </div>
@@ -395,7 +395,7 @@ We also provide download links to every FREE game.
                     Ian Thomas			   </div>
 								   <div class="testimonial-content">
 									   <div class="testimonial-photo"><img src="./css/images/employees/ian.jpg" class="img-circle"></div>
-									   <div class="testimonial-review"><p>Ian Thomas is one of the handful of Brits on the Frictional team. 
+									   <div class="testimonial-review"><p style="text-align: center;">Ian Thomas is one of the handful of Brits on the Frictional team. 
                                            Like Patrik, he's a level scripter, gameplay programmer and story lead. He joined Frictional in October 2013.
 </div>
 								</div>
@@ -413,7 +413,7 @@ We also provide download links to every FREE game.
             Fredrik Olsson			   </div>
 								   <div class="testimonial-content">
 									   <div class="testimonial-photo"><img src="./css/images/employees/fredrik.jpg" class="img-circle"></div>
-									   <div class="testimonial-review"><p>Fredrik Olsson is the Executive Producer at Frictional Games and Founder of CommuniSport. 
+									   <div class="testimonial-review"><p style="text-align: center;">Fredrik Olsson is the Executive Producer at Frictional Games and Founder of CommuniSport. 
                                            He joined Frictional Games the 1st of December 2015. 
 </div>
 								</div>
@@ -431,7 +431,7 @@ We also provide download links to every FREE game.
             Marcus Johansson			   </div>
 								   <div class="testimonial-content">
 									   <div class="testimonial-photo"><img src="./css/images/employees/marcus.jpg" class="img-circle"></div>
-									   <div class="testimonial-review"><p>Marcus Johansson is a 3D artist who's been with Frictional Games since January 2009. 
+									   <div class="testimonial-review"><p style="text-align: center;">Marcus Johansson is a 3D artist who's been with Frictional Games since January 2009. 
                                         He started as an intern for 6 months, and after that went straight on to full time.
 </div>
 								</div>
