@@ -77,11 +77,11 @@ We also provide download links to every FREE game.
 </div>
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <h2><span class="brown">Amnesia's Engine</span>HPL2</h2>
-<p class="light less-wide">HPL2 was used to create Amnesia the Dark Descent, Amnesia a Machine for Pigs, and many other custom stories made by the community!</p>
+<p class="light less-wide">HPL2 was used to create Amnesia the Dark Descent, Amnesia a Machine for Pigs and many other custom stories made by the community!</p>
 </div>
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <h2><span class="brown">SOMA's Engine</span>HPL3</h2>
-<p class="light less-wide">HPL3 is the newest version of the HPL engine. HPL3 was used to create SOMA, and possibly the two new secret projects...</p>
+<p class="light less-wide">HPL3 is the newest version of the HPL engine. HPL3 was used to create SOMA and possibly the two new secret projects...</p>
 </div>
 </div>
 <div class="row">
