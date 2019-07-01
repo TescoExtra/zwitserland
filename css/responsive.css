@@ -4,11 +4,11 @@ header.fixed{position:absolute;padding:0;background:none;line-height:normal;}
 header.fixed .logo-small{display:none;}
 header.fixed .btn{color:white;border-color:white;}
 header .container{padding-top:0;}
-.hamburger{display:block;}
+.hamburger{display:block; border: 3px solid black;}
 .navbar-header .pull-left{display:block;}
 .navbar-header .pull-left .coffee{left:0;right:inherit;height:65px;margin-top:0px}
 .navbar .navbar-collapse{display:none;}
-.mobile-menu{display:none;background:#202b28;position:absolute;z-index:2;width:70%;right:-70%;top:0px;padding:80px 0 40px;height:100vh;transition:0.5s}
+.mobile-menu{display:none;background:#000000;position:absolute;z-index:2;width:70%;right:-70%;top:0px;padding:80px 0 40px;height:100vh;transition:0.5s}
 .mobile-menu.active{right:0;display:block;}
 .mobile-menu .navbar-nav li{float:left;display:block;width:100%;text-align:-webkit-left;}
 .mobile-menu .navbar-nav{padding:0 20px !important;}
@@ -25,7 +25,7 @@ header.fixed .logo-big{display:block;}
 .banner-content .title{font-size:50px;line-height:50px;}
 .banner-content .subtitle{line-height:30px;padding-top:30px;font-size:30px;}
 .banner-content .btn-group{margin-top:20px;}
-.banner-content .btn-group .btn{margin:10px auto !important;width:180px;float:none;border-radius:4px !important;}
+.banner-content .btn-group .btn{margin:10px auto !important;width: 226px;float:none;border-radius:4px !important;}
 .vertical-align{-ms-flex-wrap:wrap;flex-wrap:wrap;}
 .fifty-wide{width:100%;padding:50px 15px;}
 footer .btn.outline{padding:10px 15px;}

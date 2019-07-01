@@ -61,6 +61,20 @@
     .hamburger-animation.is-active span::after{transition-delay:0s, 0.3s;}
     .logo{float:left;}
     .logo img{width:100%;}
+
+    .link-instagram {
+        color: white;
+    }
+
+    .link-instagram:hover {
+        color: rgb(163, 162, 162)
+    }
+
+    .contact-title {
+        font-size: 1.7em;
+        color: rgb(255, 166, 94)
+    }
+
     .logo-big{margin-top: -1.5em;}
     .logo-small{display:none;margin-top:-1em;}
     .logo-small-white, .logo-mobile{display:none;}
@@ -129,10 +143,11 @@
     .banner-content .btn-group .btn:first-child{margin-left:0;}
     .banner-content .btn-group .btn:last-child{margin-right:0;}
     .titel{padding-bottom:40px;font-size:36px;line-height:normal;}
+    .titel2{padding-bottom:40px;font-size:36px;line-height:normal;margin-top: -1em;}
     .btn{border-radius:4px !important;text-transform:uppercase;transition:0.5s;padding:10px 40px;}
     .page-template-page-home section.intro, .page-template-page-about section.intro, section.nieuws-content{padding-bottom:0;}
     section .btn{margin-top:20px;}
-    .brown{color:#c4a38e;display:block;font-size:18px;font-family:'Vidaloka';line-height:44px;margin-bottom:20px;}
+    .brown{color:rgb(255, 166, 94);display:block;font-size:18px;font-family:'Vidaloka';line-height:44px;margin-bottom:20px;}
     .seperator{width:168px;height:1px;background:#202b28;margin:20px auto 40px;}
     .seperator.white{background:white;}
     .carousel, .carousel-inner, .carousel-inner > .active, .carousel-inner > .item > img, .carousel-inner > .item > a > img{padding:0;}
@@ -146,13 +161,14 @@
     section.cta .content .titel{font-size:30px;padding-bottom:20px;}
     section.cta .content p{color:#767676;padding-bottom:20px;}
     section.cta .content .btn{margin:auto;}
-    #testimonails-carousel{padding:100px 0;}
+    #testimonails-carousel{    padding: 80px 0;
+        margin-bottom: 6em;}
     #testimonails-carousel .container{position:relative;text-align:center;}
     .testimonial-title{font-size:30px;padding-bottom:20px;line-height:normal;}
     .testimonial-title:before{content:'â€œ';}
     .testimonial-title:after{content:'â€';}
     .testimonial-content{width:260px;margin:auto;min-height:105px;margin-top:20px;}
-    .testimonial-content .testimonial-photo{float:left;width:100px;height:auto;margin-right:20px;}
+    .testimonial-content .testimonial-photo{    margin-bottom: 12px;}
     .testimonial-content .testimonial-photo img{width:80px;height:80px;object-fit:cover;}
     .testimonial-content .testimonial-review{float:left;text-align:left;}
     .testimonial-button{margin-top:40px;}
@@ -160,7 +176,7 @@
     #testimonails-carousel .black{color:#222222;text-shadow:none;}
     #testimonails-carousel .carousel-indicators .active{background-color:#222222;border:none;}
     #testimonails-carousel .carousel-indicators li{background-color:#ebebe8;border:none;}
-    #testimonails-carousel .carousel-indicators{bottom:-60px;}
+    #testimonails-carousel .carousel-indicators{bottom:-60px; display: none;}
     #route{color:white;}
     .route-bg{background-image:url(../images/Mosterd_Site_Googlemaps.png);background-repeat:no-repeat;background-size:cover;background-position:center;}
     #route .content .title{font-size:30px;padding-bottom:20px;max-width:500px;margin:auto;color:white;line-height:initial;}
