@@ -60,7 +60,7 @@ section.samenstellen{padding-bottom:0;}
 @media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important;}
 .logo-big{position:relative;left:-50px;}
 .samenstellen .icons [class*="col-"]:nth-child(4), .samenstellen .icons [class*="col-"]:nth-child(5), .samenstellen .icons [class*="col-"]:nth-child(6){margin:0;}
-.carousel, .carousel-inner, .carousel-inner > .active, .carousel-inner > .item > img, .carousel-inner > .item > a > img{max-height:850px;}
+.carousel, .carousel-inner, .carousel-inner > .active, .carousel-inner > .item > img, .carousel-inner > .item > a > img{max-height:500px;min-height: 500px;}
 }
 @media (min-width:1400px){.logo-big{position:relative;left:-100px;}
 }
