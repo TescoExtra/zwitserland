@@ -641,8 +641,10 @@ fieldset[disabled] .btn-default:focus,
 .btn-default[disabled].focus,
 fieldset[disabled] .btn-default.focus{background-color:#ebebe8;border-color:#ebebe8;}
 .btn-default .badge{color:#ebebe8;background-color:#202b28;}
-.btn-primary{color:#cecece;background-color:#5d88ff;border-color:#0c41d3;}
-.btn-darkgreen{color:white;background-color:#0052cc;border-color:#064199}
+.btn-primary{color:#cecece;background-color: #25860f;
+    border-color: #1b670a;}
+.btn-darkgreen{color:white;background-color: #29691b;
+    border-color: #284b20;}
 .btn-darkgreen:focus, .btn-darkgreen.focus, .btn-darkgreen:hover{color:#cecece;background-color:#013075;border-color:#022352;}
 .btn-primary:focus,
 .btn-primary.focus{color:#222222;background-color:#2b63ff;border-color:#ffffff;}

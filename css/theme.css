@@ -24,8 +24,8 @@
     .ondertitel{color:#767676;}
     .less-wide{padding:0 40px;}
     .fifty-wide{text-align:center;width:50%;}
-    .img-responsive{width:100%;height:40%;object-fit:scale-down;}
-    .bg-darkbrown{background:#1e1e1e;color:white;}
+    .img-responsive{width:100%;height:100%;object-fit:scale-down;     max-height: 55em;}
+    .bg-darkbrown{background:#2f472d;;color:white;}
     .bg-darkgreen{background:#202b28;color:white;}
     .bg-grey{background:#f5f5f5;}
     .btn-outline{color:#1e1e1e;border-color:#1e1e1e;background:none;}
@@ -61,6 +61,9 @@
     .hamburger-animation.is-active span::after{transition-delay:0s, 0.3s;}
     .logo{float:left;}
     .logo img{width:100%;}
+    .align-center {
+        text-align: center;
+    }
 
     .link-instagram {
         color: white;
@@ -72,13 +75,49 @@
 
     .contact-title {
         font-size: 1.7em;
-        color: rgb(255, 166, 94)
+        color: rgb(124, 230, 115)
+    }
+
+    .wpcf7-form h1{
+        font-size: 5em;
+        font-family: 'Vidaloka';
+    }
+
+    .wpcf7 ul {
+        display: none;
+    }
+
+    .wpcf7 li {
+        display: none;
+    }
+
+    .wpcf7 .wpcf7-not-valid-tip {
+        display: none;
+    }
+
+    .wpcf7 .wpcf7-validation-errors {
+        margin-top: 2.6em;
+        color: red;
+        font-weight: bolder;
+        font-size: 1.3em;
+    }
+
+    .wpcf7 .wpcf7-mail-sent-ng {
+        margin-top: 2.6em;
+        color: green;
+        font-weight: bolder;
+        font-size: 1.3em;
+    }
+
+    .screen-reader-response {
+        display: none;
     }
 
     .logo-big{margin-top: -1.5em;}
     .logo-small{display:none;margin-top:-1em;}
     .logo-small-white, .logo-mobile{display:none;}
-    header.fixed .logo-small{display:block;}
+    header.fixed .logo-small{display:block;width: 12.5em !important;
+        height: 6em !important; margin-bottom: -1em;}
     header.fixed .logo-big{display:none;}
     .navbar-header{float:left;}
     .navbar .navbar-nav{list-style:none;padding:0;display:inline-block;text-align:center;float:none;margin:0;}
@@ -106,7 +145,7 @@
     .coffee{position:absolute;top:0px;right:0;background:white;padding:20px;cursor:pointer;}
     header.fixed .coffee{}
     footer{padding:50px 0 25px;font-weight:100;}
-    footer img{margin-bottom:30px;}
+    footer img{margin-bottom:30px; height: 7.4em;}
     footer h4{color:#c4a38e;font-family:'Vidaloka';padding-bottom:20px;}
     footer .btn.outline{color:white;border-color:white;margin-top:20px;}
     footer .btn.outline:hover{color:#1e1e1e;background:white;}
@@ -145,9 +184,9 @@
     .titel{padding-bottom:40px;font-size:36px;line-height:normal;}
     .titel2{padding-bottom:40px;font-size:36px;line-height:normal;margin-top: -1em;}
     .btn{border-radius:4px !important;text-transform:uppercase;transition:0.5s;padding:10px 40px;}
-    .page-template-page-home section.intro, .page-template-page-about section.intro, section.nieuws-content{padding-bottom:0;}
+    .page-template-page-home section.intro, .page-template-page-about section.intro, section.nieuws-content{padding-bottom: 75px !important;}
     section .btn{margin-top:20px;}
-    .brown{color:rgb(255, 166, 94);display:block;font-size:18px;font-family:'Vidaloka';line-height:44px;margin-bottom:20px;}
+    .brown{color:rgb(126, 247, 132);display:block;font-size:18px;font-family:'Vidaloka';line-height:44px;margin-bottom:20px;}
     .seperator{width:168px;height:1px;background:#202b28;margin:20px auto 40px;}
     .seperator.white{background:white;}
     .carousel, .carousel-inner, .carousel-inner > .active, .carousel-inner > .item > img, .carousel-inner > .item > a > img{padding:0;}
@@ -269,6 +308,7 @@
     }
     @media only screen and (min-width:900px){.masonry{-moz-column-count:3;-webkit-column-count:3;column-count:3;}
     }
+    
     @media only screen and (min-width:1100px){.masonry{-moz-column-count:3;-webkit-column-count:3;column-count:3;}
     }
     .nieuws-item{transition:0.5s;}
@@ -325,8 +365,10 @@
     .produceren{padding-bottom:0;}
     .invert{color:#999999}
     .home h2.titel{padding-bottom:70px;margin:0;}
+    .home h2.titel2{padding-bottom:30px;margin:0;}
     .stijl img{height:300px;object-fit:cover;}
     .bg-darkbrown h2{margin-bottom:30px;}
+    .bg-timeline h2{margin-bottom:30px;}
     .category-vacature .intro .col-xs-12.col-sm-4.col-md-4.col-lg-4{padding:0px 60px;}
     .vacature-intro{font-size:20px;line-height:1.6;margin-bottom:30px;}
     .page-template-page-contact .intro .btn{font-weight:bold;}
