@@ -170,7 +170,7 @@ section.over img{object-position:65%;}
 .post-title{padding:0;}
 .seperator{margin:20px auto;}
 .testimonial-content .testimonial-review{float:none;text-align:unset;margin-top:20px;}
-.carousel, .carousel-inner, .carousel-inner > .active, .carousel-inner > .item > img, .carousel-inner > .item > a > img{height:100%;object-fit:cover;}
+.carousel, .carousel-inner, .carousel-inner > .active, .carousel-inner > .item > img, .carousel-inner > .item > a > img{object-fit:cover;}
 .item{height:100%;}
 .page-template-page-about .bg-darkgreen .col-xs-12.col-sm-4.col-md-4.col-lg-4, .category-vacature section.intro .col-xs-12.col-sm-4.col-md-4.col-lg-4, .category-nieuws section.intro .col-xs-12.col-sm-4.col-md-4.col-lg-4, .page-template-page-contact section.contact-details .col-xs-12.col-sm-4.col-md-4.col-lg-4, .page-template-page-poorten .intro .col-xs-12.col-sm-4.col-md-4.col-lg-4, .page-template-page-deuren .intro .col-xs-12.col-sm-4.col-md-4.col-lg-4{margin-bottom:inherit;}
 .samenstellen .icons [class*="col-"]:nth-child(4), .samenstellen .icons [class*="col-"]:nth-child(5), .samenstellen .icons [class*="col-"]:nth-child(6){margin:0;}
@@ -215,7 +215,7 @@ footer .totop{top:-55px;right:-50px;}
 header .container{padding-top:30px;}
 header.fixed{background-color:#fff;-webkit-box-shadow:0 4px 14px rgba(0,0,0,.06);box-shadow:0 4px 14px rgba(0,0,0,.06);padding-bottom:25px;position:fixed;}
 header.fixed .container{}
-header.fixed .logo-small{display:block;}
+header.fixed .logo-small{display:block; }
 header.fixed .logo-big{display:none;}
 header.fixed .navbar .navbar-nav li a{color:#1e1e1e;}
 header.fixed .navbar .navbar-nav li.btn:hover a{color:white;}
