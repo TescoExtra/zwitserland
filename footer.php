@@ -28,8 +28,8 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <ul class="bottom light">
-                    <li><a href="https://discordapp.com/invite/frictionalgames">NC Tuinservice</a></li>
-                    <li><a href="https://www.instagram.com/frictionalgamers/">Social Media</a></li>
+                    <li><a href="#">NC Tuinservice</a></li>
+                    <li><a href="#">Social Media</a></li>
                     <li><a href="#" target="_blank">Nickert</a></li>
                     <li style="font-weight: normal;">Copyright © 2019</li>
                 </ul>
@@ -54,11 +54,9 @@
 
     jQuery(document).ready(function ($) {
 
-
         var header = $("header");
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
-
             if (scroll >= 1) {
                 header.addClass("fixed");
             } else {
