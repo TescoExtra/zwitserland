@@ -8,11 +8,8 @@
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">		<img src="http://localhost/projecten/wp-content/themes/shsite/css/images/fg.png" alt="Frictional Games" width="120" height="75" style="margin-left: 20%;">
                     <p>This website is gemaakt door <br/>
                     Nick van Herck & Ashbert Bergrok.
-                    
                     </p>
         </div>
-        
-
             <div class="widget_text col-xs-12 col-sm-4 col-md-4 col-lg-4"><h4 class="contact-title">Contact Information</h4><div class="textwidget custom-html-widget"><ul>
 <li class="company">NC Tuinservice</li>
 <li>5021 BM</li>

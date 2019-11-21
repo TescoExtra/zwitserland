@@ -25,7 +25,6 @@
 <div id="menu" class="navbar-collapse">
 <ul id="menu-menu" class="nav navbar-nav"><li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-257 current_page_item menu-item-260"><a href="http://localhost/projecten/">Home</a></li>
 <li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="http://localhost/projecten/nieuwsbrief">Nieuwsbrief</a></li>
-<li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="http://localhost/projecten/portfolio/">Portfolio</a></li>
 <li id="menu-item-258" class="btn outline menu-item menu-item-type-post_type menu-item-object-page menu-item-258"><a href="http://localhost/projecten/Contact/">Contact</a></li>
 </ul></div>
 </nav>
@@ -36,8 +35,8 @@
 <div class="banner">
 <div class="banner-content">
 <div class="container">
-<div class="title">Contact</div>
-<div class="subtitle vidaloka">Contact met NC Tuinservice</div>
+<div class="title">Portfolio</div>
+<div class="subtitle vidaloka">Een aantal fotos van oude projecten!</div>
 <div class="btn-group">
 <a href="http://localhost/projecten" class="btn btn-primary">Home</a>
 <a href="http://localhost/projecten/contact/" class="btn btn-darkgreen">Contact</a>
@@ -46,16 +45,102 @@
 </div>
 </div>
 <div class="banner-image">
-<img src="http://localhost/projecten/wp-content/themes/shsite/css/images/contactimg.jpg" alt="">
+<img src="http://localhost/projecten/wp-content/themes/shsite/css/images/soma2.jpg" alt="">
 </div>
 </div>
 
 <body>
 
 
-<div class="container" style="text-align: center">
-<?php echo do_shortcode('[contact-form-7 id="2159" title="Contact form 1"]'); ?>
+
+
+
+<div class="workwith" id="work">
+    <div class="work_text">
+        <h1> Portfolio Fotos </h1>
+    </div>
+    <div class="container" style="text-align: center;">
+    <?php if( have_rows('slides') ): ?>
+
+	<div class="work_logos d-flex flex-wrap">
+
+	<?php while( have_rows('slides') ): the_row(); 
+
+		// vars
+		$image = get_sub_field('image');
+
+		?>
+        <div class="work_logo">
+            <img src="<?php echo $image; ?>"/>
+        </div>
+
+	<?php endwhile; ?>
+    </div>
+	</div>
+
+<?php endif; ?>
 </div>
+
+<style>
+
+.workwith {
+  width: 100%;
+  padding: 2em;
+}
+
+  .workwith .work_text {
+    justify-content: center;
+    display: flex;
+    margin: 1em 0 2em 0;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+    .workwith .work_text h1 {
+      font-weight: 600;
+    }
+
+    .workwith .work_logos {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: center;
+    }
+
+    .workwith .work_logos .work_logo {
+      justify-content: center;
+      display: inline-flex;
+      flex-direction: column;
+      width: 26em;
+      color: black;
+      margin: 1em 0;
+    }
+
+      .workwith .work_logos .work_logo img {
+        width: auto;
+        max-width: 100%;
+        margin: 1em;
+      }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 <br/>
 <br/>
