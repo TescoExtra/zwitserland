@@ -1,3 +1,16 @@
+<div style="display: none;">
+{{--
+  Template Name: home template
+--}}
+
+@extends('layouts.app')
+@section('content')
+  @while(have_posts()) @php the_post() @endphp
+    @include('partials.page-header')
+
+  @endwhile
+@endsection
+</div>
 <?php include 'header.php';?>
 
 <div class="content">
@@ -40,24 +53,26 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 </section>
 <section class="bg-darkbrown text-center">
 <div class="container">
+<?php if( have_rows('column-repeater') ): ?>
 <div class="row">
+
+
+
+<?php  while ( have_rows('column-repeater') ) : the_row(); ?>
+
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<h2><span class="brown">Lorem Ipsum</span>Lorem Ipsum</h2>
-<p class="light less-wide">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-<a href="https://wiki.frictionalgames.com/hpl1/start" class="btn btn-default">View Docs</a>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<h2><span class="brown">Lorem Ipsum</span>Lorem Ipsum</h2>
-<p class="light less-wide">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-<a href="https://wiki.frictionalgames.com/hpl2/start" class="btn btn-default">View Docs</a>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<h2><span class="brown">Lorem Ipsum</span>Lorem Ipsum</h2>
-<p class="light less-wide">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-<a href="https://wiki.frictionalgames.com/hpl3/start" class="btn btn-default">View Docs</a>
-</div>
+<h2><span class="brown"><?php the_sub_field('column_title'); ?></span><?php the_sub_field('column_title'); ?></h2>
+<p class="light less-wide"><?php the_sub_field('column_description'); ?></p>
 </div>
 
+
+<?php endwhile; ?>
+
+
+
+
+</div>
+<?php endif; ?>
 </div>
 </section>
 <section class="carousel">
@@ -143,24 +158,26 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 <section class="bg-darkgreen text-center hidden-xs">
 <div class="container">
 <h2 class="titel"><span class="vidaloka"><em>Lorem Ipsum</em></span></h2>
+<?php if( have_rows('column-repeater-2') ): ?>
 <div class="row">
+
+<?php  while ( have_rows('column-repeater-2') ) : the_row(); ?>
+
+
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<div class="year">Lorem Ipsum</div>
+<div class="year"><?php the_sub_field('column_title'); ?></div>
 <div class="seperator white"></div>
-<p class="light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p class="light"><?php the_sub_field('column_description'); ?></p>
 </div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<div class="year">Lorem Ipsum</div>
-<div class="seperator white"></div>
-<p class="light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+
+<?php endwhile; ?>
+
+
+
+
 </div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<div class="year">Lorem Ipsum</div>
-<div class="seperator white"></div>
-<p class="light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-</div>
-</div>
-</div>
+<?php endif; ?>
 </section>
 
 </div>
