@@ -1,4 +1,16 @@
+<div style="display: none;">
+{{--
+  Template Name: portfolio template
+--}}
 
+@extends('layouts.app')
+@section('content')
+  @while(have_posts()) @php the_post() @endphp
+    @include('partials.page-header')
+
+  @endwhile
+@endsection
+</div>
 
 <head>
 <link rel="shortcut icon" type="image/png" href="http://localhost/projecten/wp-content/themes/shsite/css/images/36.png"/>
@@ -25,6 +37,7 @@
 <div id="menu" class="navbar-collapse">
 <ul id="menu-menu" class="nav navbar-nav"><li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-257 current_page_item menu-item-260"><a href="http://localhost/projecten/home/">Home</a></li>
 <li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="http://localhost/projecten/nieuwsbrief">Nieuwsbrief</a></li>
+<li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="http://localhost/projecten/portfolio/">Portfolio</a></li>
 <li id="menu-item-258" class="btn outline menu-item menu-item-type-post_type menu-item-object-page menu-item-258"><a href="http://localhost/projecten/Contact/">Contact</a></li>
 </ul></div>
 </nav>

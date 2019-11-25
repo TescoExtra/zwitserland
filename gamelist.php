@@ -1,5 +1,17 @@
 
+<div style="display: none;">
+{{--
+  Template Name: Nieuwsbrief template
+--}}
 
+@extends('layouts.app')
+@section('content')
+  @while(have_posts()) @php the_post() @endphp
+    @include('partials.page-header')
+
+  @endwhile
+@endsection
+</div>
 
 <head>
 <link rel="shortcut icon" type="image/png" href="http://localhost/projecten/wp-content/themes/shsite/css/images/36.png"/>
