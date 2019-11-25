@@ -24,7 +24,7 @@
 </div>
 </div>
 <div id="menu" class="navbar-collapse">
-<ul id="menu-menu" class="nav navbar-nav"><li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-257 current_page_item menu-item-260"><a href="http://localhost/projecten/">Home</a></li>
+<ul id="menu-menu" class="nav navbar-nav"><li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-257 current_page_item menu-item-260"><a href="http://localhost/projecten/home/">Home</a></li>
 <li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="http://localhost/projecten/nieuwsbrief/">Nieuwsbrief</a></li>
 <li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="http://localhost/projecten/portfolio/">Portfolio</a></li>
 <li id="menu-item-258" class="btn outline menu-item menu-item-type-post_type menu-item-object-page menu-item-258"><a href="http://localhost/projecten/contact/">Contact</a></li>
@@ -40,7 +40,7 @@
 <div class="title">Nieuwsbrief</div>
 <div class="subtitle vidaloka">De nieuwsbrief van NC Tuinservice</div>
 <div class="btn-group">
-<a href="http://localhost/projecten" class="btn btn-primary">Home</a>
+<a href="http://localhost/projecten/home/" class="btn btn-primary">Home</a>
 <a href="http://localhost/projecten/contact/" class="btn btn-darkgreen">Contact</a>
 </div>
 <i class="fa fa-chevron-down" aria-hidden="true"></i>

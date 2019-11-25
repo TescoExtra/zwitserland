@@ -35,12 +35,10 @@
 <div class="container">
 <div class="row row-eq-height">
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 align-center">
-<h1 class="titel">Wat doen wij?</h1>
+<h1 class="titel"><?php the_field('titel_vak'); ?></h1>
 <p>
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  <br/>
-Aenean commodo ligula eget dolor. Aenean massa. <br/>
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+<?php the_field('tekst_vak'); ?>
 
 </p>
 <a href="gamelist.php" class="btn btn-default">Contact</a>
