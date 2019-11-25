@@ -63,7 +63,15 @@
 </div>
 </div>
 
+<?php if( have_rows('nieuws_repeater') ): ?>
 
+    <?php while( have_rows('nieuws_repeater') ): the_row(); 
+
+$image = get_sub_field('nieuws_image');
+$title = get_sub_field('nieuws_titel');
+$text = get_sub_field('nieuws_tekst');
+
+?>
 
 
 <section class="over text-center">
@@ -71,36 +79,19 @@
             <div class="row vertical-align">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 bg-grey">
                     <div class="fifty-wide">
-                        <div class="titel nopadding"><em class="vidaloka">Nieuwsartikel nummer 1</em></div>
+                        <div class="titel nopadding"><em class="vidaloka"><?php echo $title; ?></em></div>
                         <div class="seperator"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
+                        <p><?php echo $text; ?></p>
                         <a href="#" class="btn btn-outline">Lees meer</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <img src="http://localhost/projecten/wp-content/themes/shsite/css/images/sp/soma1.jpg" class="img-responsive"></div>
+                    <img src="<?php echo $image; ?>" class="img-responsive"></div>
             </div></div>
     </section>
 
-    <section class="over text-center">
-        <div class="container-fluid">
-            <div class="row vertical-align">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <img src="http://localhost/projecten/wp-content/themes/shsite/css/images/sp/plant.jpg" class="img-responsive">
-                </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 bg-grey">
-                    <div class="fifty-wide">
-                        <div class="titel nopadding"><em class="vidaloka">Vliegende plant</em></div>
-                        <div class="seperator"></div>
-                        <p>Wat een mooie vliegende plant, erg apart. Maar wel mooi. </p>
-                        <a href="#" class="btn btn-outline">Lees meer</a>
-                    </div>
-                </div>
-            </div>
-            
-            </div>
-    </section>
+    <?php endwhile; ?>
+<?php endif; ?>
 
 
 

@@ -49,7 +49,7 @@
 <div class="banner-content">
 <div class="container">
 <div class="title">Portfolio</div>
-<div class="subtitle vidaloka">Een aantal fotos van oude projecten!</div>
+<div class="subtitle vidaloka">Een aantal fotos van onze oude projecten!</div>
 <div class="btn-group">
 <a href="http://localhost/projecten/home/" class="btn btn-primary">Home</a>
 <a href="http://localhost/projecten/contact/" class="btn btn-darkgreen">Contact</a>
@@ -63,9 +63,6 @@
 </div>
 
 <body>
-
-
-
 
 
 <div class="workwith" id="work">
