@@ -64,7 +64,6 @@
 
 <body>
 
-
 <div class="container" style="text-align: center">
 <?php echo do_shortcode('[contact-form-7 id="2159" title="Contact form 1"]'); ?>
 </div>

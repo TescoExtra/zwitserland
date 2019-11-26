@@ -16,7 +16,7 @@ header .container{padding-top:0;}
 .mobile-menu .pull-right{float:left !important;margin-left:40px;margin-top:40px;}
 header.fixed .mobile-menu .navbar-nav li.current-menu-item a, .mobile-menu .navbar-nav li.current-menu-item a{color:white;}
 header.fixed .navbar .navbar-nav li a, .mobile-menu .navbar-nav li a{color:rgba(255,255,255,0.40);}
-.logo-big{display:block;position:absolute;margin:auto;left:0;right:0;top:66px;}
+.logo-big{display:block;position:absolute;margin:auto;left:0;right:0;}
 header.fixed .logo-big{display:block;}
 .logo-small-white{display:block;margin:40px 58px;}
 .logo-mobile{display:block;}
