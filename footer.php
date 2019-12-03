@@ -17,7 +17,7 @@
 <li> Nederland </li>
 <li class="phone"><span>Call NC:</span> <a href="tel:46 708 88 52 33">+06 202 152 85</a></li>
 </ul>
-<a href="https://www.frictionalgames.com/site/contact" class="btn outline arrow">Send an email</a>
+<a href="https://www.frictionalgames.com/site/contact" class="btn outline arrow">Stuur een email</a>
 </div></div>
         </div>
         <br/>

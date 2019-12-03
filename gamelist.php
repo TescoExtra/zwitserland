@@ -73,7 +73,6 @@ $text = get_sub_field('nieuws_tekst');
 
 ?>
 
-
 <section class="over text-center">
         <div class="container-fluid">
             <div class="row vertical-align">
@@ -92,9 +91,6 @@ $text = get_sub_field('nieuws_tekst');
 
     <?php endwhile; ?>
 <?php endif; ?>
-
-
-
 
 <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
 <link rel="stylesheet" href="http://localhost/projecten/wp-content/themes/shsite/css/front-min.css" rel="stylesheet" type="text/css"/>

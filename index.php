@@ -12,7 +12,6 @@
 @endsection
 </div>
 <?php include 'header.php';?>
-
 <div class="content">
 <div class="banner">
 <div class="banner-content">
@@ -27,7 +26,7 @@
 </div>
 </div>
 <div class="banner-image">
-<img src="http://localhost/projecten/wp-content/themes/shsite/css/images/soma.jpg" alt="">
+<img src="http://localhost/projecten/wp-content/themes/shsite/css/images/soma.jpg" alt="Banner Image">
 </div>
 </div>
 
