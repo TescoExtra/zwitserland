@@ -104,9 +104,9 @@
 <div class="icon">
 <img src="https://mosterdmaasland.nl/wp-content/uploads/2017/11/Mosterd_Icon_Poort.svg" width="96" height="60" alt="">
 </div>
-<div class="titel nopadding">Tuinservice Nieuwsbrief</div>
+<div class="titel nopadding"><?php the_field('slider_title1'); ?></div>
 <div class="seperator"></div>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p><?php the_field('slider_text1'); ?></p>
 <a href="timeline.php" class="btn btn-default">Nieuwsbrief</a>
 </div>
 </div>
@@ -120,9 +120,9 @@
 <div class="icon">
 <img src="https://mosterdmaasland.nl/wp-content/uploads/2017/11/Mosterd_Icon_Deur.svg" width="96" height="60" alt="">
 </div>
-<div class="titel nopadding">Tuinservice contact</div>
+<div class="titel nopadding"><?php the_field('slider_title2'); ?></div>
 <div class="seperator"></div>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+<p><?php the_field('slider_text2'); ?></p>
 <a href="gamelist.php" class="btn btn-default">Contact</a>
 </div>
 </div>
